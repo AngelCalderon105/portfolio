@@ -3,13 +3,16 @@ import Card from "./_components/card";
 import TextButton from "./_components/textbutton";
 import SocialButton from "./_components/socialbutton";
 import avatarThumbsUp from "../../public/avatar/thumbsup.png"
+import avatarThinking from "../../public/avatar/thinking.png"
+import avatarGreeting from "../../public/avatar/greeting.png"
 import twitterLogo from "../../public/socialmedia/twitter-logo.svg"
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
+import rightArrow from "../../public/symbols/right-arrow.svg"
 
 export default function Home() {
   return (
-    <main className="bg-background h-screen text-text py-5 ">
-      <div className='bg-ui p-5 mx-5 border-1 border-white border-opacity-10 rounded-2rem'>
+    <main className="bg-background  text-text py-5 ">
+      <div className='card'>
         <div className="  ">
           <div className="flex items-center">
             <div className=" w-20">
@@ -23,11 +26,27 @@ export default function Home() {
           <div className="flex justify-start gap-2 my-2">
             <SocialButton imageSrc={tiktokLogo} altText="Tiktok Logo" url = "tiktok.com"/>
             <SocialButton imageSrc = {twitterLogo}  altText="Twitter Logo" url = "x.com"/>
-            <TextButton text = "Get In Touch"/>
+            <TextButton text = "Get In Touch" />
           </div>
         </div>
-        <p className="text-heading text-2xl my-4">Pushing Ideas to the <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
-        <p className="">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
+        <p className="heading">Pushing Ideas to the <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
+        <p className="my-4">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
+      </div>
+      
+      {/* Star Greeting */}
+      <div className="card my-4">
+        <Image src={avatarGreeting} alt="Greeting Avatar"></Image>
+      </div>
+     
+      {/* What Sets Me Apart */}
+      <div className="card">
+        <Image src={avatarThinking} alt="Thinking Avatar"></Image>
+        <p className="heading">What sets me <i className="font-instrument_italic">apart?</i></p>
+        <p className="my-4">My determination knows no bounds. I am exceptionally proactive in my work ethic; more often than not, going <i>above and beyond</i> to achieve remarkable results. My involvement in your team guarantees that expectations are not just met but consistently exceeded,</p>
+        <div className="inline-flex flex-col gap-4 my-4">
+          <TextButton text = "Browse My Work" symbol={rightArrow}/>
+          <TextButton text = "View Experience" symbol={rightArrow}/>        
+        </div>
       </div>
       </main>
     );
