@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '1': '1px', // Adding a 1px border width utility
+        // Add other custom border widths here if needed
+      },
+      borderRadius: {
+        '2rem': '2rem',
+        '2.5rem': '2.5rem',
+      },
       colors: {
         background: '#0A0A0A',
         heading: '#F5F5F8',
