@@ -8,7 +8,7 @@ export default function textButton({text, symbol} : { text: string, symbol?: str
               </span>
               
               
-              {symbol && <Image src={symbol} alt="Icon" className="w-7 inline" />} 
+              {symbol && <Image src={symbol} alt="Icon" className="w-7 inline ml-4" />} 
               
       </span>
     )
