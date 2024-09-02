@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <p className="text-heading text-2xl my-4">Pushing Ideas to the <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
-        <p className="">Hey there, I'm Angel, I'm in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
+        <p className="">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
       </div>
       </main>
     );
