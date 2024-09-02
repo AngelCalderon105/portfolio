@@ -160,3 +160,9 @@
   @tailwind components;
   @tailwind utilities;
   
+  @layer base {
+     i {
+       @apply font-satoshi_italic text-white;
+     }
+   }
+   

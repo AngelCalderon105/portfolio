@@ -7,10 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: 
+    {
+      letterSpacing: {
+        tightest: '-0.04em',  
+      },
       borderWidth: {
-        '1': '1px', // Adding a 1px border width utility
-        // Add other custom border widths here if needed
+        '1': '1px', 
       },
       borderRadius: {
         '2rem': '2rem',
@@ -25,8 +28,9 @@ const config: Config = {
         accent: '#292929'        
       },
       fontFamily: {
-       
-        medium: 'Satoshi-Medium',
+        satoshi_medium: 'Satoshi-Medium',
+        satoshi_italic: 'Satoshi-BoldItalic',
+        instrument_italic: 'var(--font-instrument-serif)',
       },
     },
   },
