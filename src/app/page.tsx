@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ExperienceCard from "./_components/experiencecard";
+import ExperienceCard from "./_components/ExperienceCard";
 import TextButton from "./_components/TextButton";
 import SocialButton from "./_components/SocialButton";
 import avatarThumbsUp from "../../public/avatar/thumbsup.png"
