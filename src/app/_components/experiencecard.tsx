@@ -14,7 +14,7 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({companyLogo, companyName, position, text, image, technicalSkills, softSkills } :ExperienceCardProps ) {
   return (
-    <div className='card'>
+    <div className='card my-5'>
       <div className=" flex justify-start gap-2">
         <Image 
         src = {companyLogo} 
@@ -23,7 +23,7 @@ export default function ExperienceCard({companyLogo, companyName, position, text
         height={70}
         className="rounded-2xl"  
         ></Image>
-        <p className="heading">{companyName}</p>
+        <p className="heading ">{companyName}</p>
       </div>
     <p className="heading ">{position}</p>
     <p className="my-4">{text}</p>

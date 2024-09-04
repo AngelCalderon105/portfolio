@@ -6,6 +6,7 @@ import avatarThumbsUp from "../../public/avatar/thumbsup.png"
 import avatarThinking from "../../public/avatar/thinking.png"
 import avatarGreeting from "../../public/avatar/greeting.png"
 import altitudLogo from "../../public/images/altitudlogo.png"
+import gppLogo from "../../public/images/gpplogo.png"
 import twitterLogo from "../../public/socialmedia/twitter-logo.svg"
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
 import rightArrow from "../../public/symbols/right-arrow.svg"
@@ -57,6 +58,27 @@ export default function Home() {
         companyLogo = {altitudLogo}
         companyName="Altitud" 
         position="Founder/Full Stack Engineer" 
+        text="Lead Developer of a team of 8 engineers, managing all operations including sprint meetings, client relations and the design and implementation of full stack architecture utilizing MongoDB, Express, React, and Node.js." 
+        technicalSkills={[ 
+          "Next.js",
+          "React.js",
+          "Tailwind CSS",
+          "TypeScript",
+          "PostgreSQL",
+          "Prisma"
+        ]} 
+        softSkills={[
+          "Leadership",
+          "Team Collaboration",
+          "Project Management",
+          "Agile",
+          "Communication"
+        ]} 
+        image="" />
+        <ExperienceCard 
+        companyLogo = {gppLogo}
+        companyName="GPP" 
+        position="Front End Developer Intern" 
         text="Lead Developer of a team of 8 engineers, managing all operations including sprint meetings, client relations and the design and implementation of full stack architecture utilizing MongoDB, Express, React, and Node.js." 
         technicalSkills={[ 
           "Next.js",
