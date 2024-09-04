@@ -131,7 +131,7 @@ export default function Home() {
         <SocialButton imageSrc={tiktokLogo} altText="Tiktok Logo" url = "tiktok.com"/>
         <SocialButton imageSrc={twitterLogo} altText="Twitter Logo" url = "twitter.com"/>
       </div>
-      <p className=" text-center text-sm p-10 mt-8 ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
+      <p className=" text-center text-sm p-10  ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
 
       </main>
     );
