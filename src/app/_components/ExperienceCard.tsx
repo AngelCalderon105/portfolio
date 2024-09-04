@@ -32,7 +32,7 @@ export default function ExperienceCard({companyLogo, companyName, position, text
       <h1 className="text-white text-2xl my-4">Technical</h1>
       <div className="flex flex-wrap gap-2 ">
       {technicalSkills.map(skill => (
-        <TextButton key={skill} text={skill} />
+        <TextButton key={skill} text={skill} textSize="text-lg"/>
       ))}
       </div>
     </div>
@@ -40,7 +40,7 @@ export default function ExperienceCard({companyLogo, companyName, position, text
       <h1 className="text-white text-2xl my-4">Soft Skills</h1>
       <div className="flex flex-wrap gap-x-2 gap-y-3">
       {softSkills.map(skill => (
-          <TextButton key={skill} text={skill} />
+          <TextButton key={skill} text={skill} textSize="text-lg"/>
         ))}
       </div>
     </div>

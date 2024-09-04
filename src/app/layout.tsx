@@ -12,7 +12,7 @@ const instrument_serif = Instrument_Serif({
   subsets: ['latin'], 
   display: 'swap',
   variable: '--font-instrument-serif',
-  style: ['italic'], 
+  style: ['italic','normal'], 
 })
 
 export default function RootLayout({

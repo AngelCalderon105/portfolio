@@ -1,11 +1,15 @@
 import Image from "next/image";
 import ExperienceCard from "./_components/ExperienceCard";
+import ProjectCard from "./_components/ProjectCard";
 import TextButton from "./_components/TextButton";
 import SocialButton from "./_components/SocialButton";
 import avatarThumbsUp from "../../public/avatar/thumbsup.png"
 import avatarThinking from "../../public/avatar/thinking.png"
 import avatarGreeting from "../../public/avatar/greeting.png"
 import altitudLogo from "../../public/images/altitudlogo.png"
+import sparkybulldogs from "../../public/images/sparkybulldogs.png"
+import gpp from "../../public/images/gpp.png"
+import cbulldogs from "../../public/images/cbulldogs.png"
 import gppLogo from "../../public/images/gpplogo.png"
 import twitterLogo from "../../public/socialmedia/twitter-logo.svg"
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
@@ -28,7 +32,7 @@ export default function Home() {
           <div className="flex justify-start gap-2 my-2">
             <SocialButton imageSrc={tiktokLogo} altText="Tiktok Logo" url = "tiktok.com"/>
             <SocialButton imageSrc = {twitterLogo}  altText="Twitter Logo" url = "x.com"/>
-            <TextButton text = "Get In Touch" />
+            <TextButton text = "Get In Touch" textSize="text-md"/>
           </div>
         </div>
         <p className="heading">Pushing Ideas to the <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
@@ -46,8 +50,8 @@ export default function Home() {
         <p className="heading">What sets me <i className="font-instrument_italic">apart?</i></p>
         <p className="my-4">My determination knows no bounds. I am exceptionally proactive in my work ethic; more often than not, going <i>above and beyond</i> to achieve remarkable results. My involvement in your team guarantees that expectations are not just met but consistently exceeded,</p>
         <div className="inline-flex flex-col gap-4 my-4">
-          <TextButton text = "Browse My Work" symbol={rightArrow}/>
-          <TextButton text = "View Experience" symbol={rightArrow}/>        
+          <TextButton text = "Browse My Work" symbol={rightArrow} textSize="text-md"/>
+          <TextButton text = "View Experience" symbol={rightArrow} textSize="text-md"/>        
         </div>
       </div>
       {/* Experience */}
@@ -98,6 +102,37 @@ export default function Home() {
         image="" />
       
       </div>
+      {/* Projects */}
+      <div>
+        <ProjectCard 
+        projectName = "Calderon Bulldogs"
+        projectImage = {cbulldogs}
+        tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Prisma", "AWS S3"]}
+        description = "A Full Stack website fo Local Puppy Business"
+        />
+                <ProjectCard 
+        projectName = "Green Portfolio"
+        projectImage = {gpp}
+        tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "MongoDB"]}
+        description = "A Landing page for a Business Organization designed to help students"
+        />
+                <ProjectCard 
+        projectName = "Sparky's Puppies"
+        projectImage = {sparkybulldogs}
+        tools = {["HTML","JavaScript", "Tailwind CSS", "Firebase"]}
+        description = "A Full Stack website fo Local Puppy Business"
+        />
+      </div>
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="font-instrument_italic mt-4 text-text text-4xl">Calderon</h1>
+        <p className="mx-4 mt-2 mb-4  text-white text-center">Actively Looking For Software Engineering Positions</p>
+      </div>
+      <div className="flex justify-center gap-x-4 ">
+        <SocialButton imageSrc={tiktokLogo} altText="Tiktok Logo" url = "tiktok.com"/>
+        <SocialButton imageSrc={twitterLogo} altText="Twitter Logo" url = "twitter.com"/>
+      </div>
+      <p className=" text-center text-sm p-10 ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
+
       </main>
     );
 }
