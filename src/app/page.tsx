@@ -104,7 +104,7 @@ export default function Home() {
               <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent"></div>
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent"></div>
           </div>
-          <p className="text-center my-5">Tools I've Mastered!</p>
+          <p className="text-center my-5">Tools I&apos;ve Mastered!</p>
           <TechCousel techImages={techImages}/>
       </div>
      
