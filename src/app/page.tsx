@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+import ShootingStars from "./_components/ShootingStars";
 import ExperienceCard from "./_components/ExperienceCard";
 import ProjectCard from "./_components/ProjectCard";
 import TextButton from "./_components/TextButton";
@@ -14,10 +16,34 @@ import gppLogo from "../../public/images/gpplogo.png"
 import twitterLogo from "../../public/socialmedia/twitter-logo.svg"
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
 import rightArrow from "../../public/symbols/right-arrow.svg"
+import TechCousel from "./_components/TechCarousel";
+
+import expressLogo from "../../public/techImages/express.png";
+import javascriptLogo from "../../public/techImages/javascript.png";
+import mongodbLogo from "../../public/techImages/mongodb.png";
+import nextLogo from "../../public/techImages/next.png";
+import nodeLogo from "../../public/techImages/node.png";
+import postgresqlLogo from "../../public/techImages/postgresql.png";
+import prismaLogo from "../../public/techImages/prisma.png";
+import pythonLogo from "../../public/techImages/python.png";
+import tailwindLogo from "../../public/techImages/tailwind.png";
+import typescriptLogo from "../../public/techImages/typescript.png";
 
 export default function Home() {
-  return (
-    <main className="bg-background  text-text py-5 ">
+  const techImages: StaticImageData[] = [
+    expressLogo,
+    javascriptLogo,
+    mongodbLogo,
+    nextLogo,
+    nodeLogo,
+    postgresqlLogo,
+    prismaLogo,
+    pythonLogo,
+    tailwindLogo,
+    typescriptLogo
+  ];
+    return (
+    <main className="bg-background text-text py-5 ">
       <div className='card'>
         <div className="  ">
           <div className="flex items-center">
@@ -39,21 +65,69 @@ export default function Home() {
         <p className="my-4">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
       </div>
       
-      {/* Star Greeting */}
-      <div className="card my-4">
-        <Image src={avatarGreeting} alt="Greeting Avatar"></Image>
+       {/* Star Greeting */}
+{/* Star Greeting */}
+<div className="card relative my-10 z-0 overflow-hidden border-b-0.5">
+  {/* The image container with a higher z-index */}
+  <Image src={avatarGreeting} alt="Greeting Avatar" className="relative z-30" />
+
+  {/* Existing Shooting stars animation with a lower z-index */}
+  <div className="absolute inset-0 z-10 pointer-events-none">
+    <ShootingStars />
+  </div>
+
+  {/* CSS-based shooting stars placed on top */}
+  <div className="absolute inset-0 z-20 pointer-events-none">
+    <div className="shooting-star-container">
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+    </div>
+  </div>
+
+  {/* Fade effect including the bottom border */}
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background opacity-100 z-40 pointer-events-none rounded-b-xl"></div>
+</div>
+
+
+
+
+
+    
+
+      {/* Tech Carousel */}
+      <div className="my-10 mx-10 relative ">
+          <div className="absolute inset-0  z-10">
+              <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent"></div>
+          </div>
+          <p className="text-center my-5">Tools I've Mastered!</p>
+          <TechCousel techImages={techImages}/>
       </div>
      
       {/* What Sets Me Apart */}
-      <div className="card">
-        <Image src={avatarThinking} alt="Thinking Avatar"></Image>
-        <p className="heading">What sets me <i className="font-instrument_italic">apart?</i></p>
-        <p className="my-4">My determination knows no bounds. I am exceptionally proactive in my work ethic; more often than not, going <i>above and beyond</i> to achieve remarkable results. My involvement in your team guarantees that expectations are not just met but consistently exceeded,</p>
-        <div className="inline-flex flex-col gap-4 my-4">
-          <TextButton text = "Browse My Work" symbol={rightArrow} textSize="text-md"/>
-          <TextButton text = "View Experience" symbol={rightArrow} textSize="text-md"/>        
-        </div>
-      </div>
+<div className="card border-b-0.5">
+  <div className="relative  overflow-hidden">
+    <Image src={avatarThinking} alt="Thinking Avatar" className="relative z-20" />
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background opacity-100 z-30 pointer-events-none rounded-b-xl"></div>
+  </div>
+
+  {/* Text content */}
+  <p className="heading">What sets me <i className="font-instrument_italic">apart?</i></p>
+  <p className="my-4">
+    My determination knows no bounds. I am exceptionally proactive in my work ethic; more often than not, going <i>above and beyond</i> to achieve remarkable results. My involvement in your team guarantees that expectations are not just met but consistently exceeded,
+  </p>
+
+  {/* Buttons */}
+  <div className="inline-flex flex-col gap-4 my-4">
+    <TextButton text="Browse My Work" symbol={rightArrow} textSize="text-md" />
+    <TextButton text="View Experience" symbol={rightArrow} textSize="text-md" />        
+  </div>
+</div>
+
       {/* Experience */}
       <div>
         <p className="heading mx-5">Experience</p>

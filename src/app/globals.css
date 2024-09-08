@@ -170,5 +170,89 @@
      .heading{
           @apply text-heading text-3xl my-4
      }
-   }
+ /* Star container */
+.shooting-star-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Individual star */
+.shooting-star {
+  position: absolute;
+  top: 0;
+  width: 0px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  animation: shooting 2s linear infinite;
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) translateX(-100%) rotate(35deg);
+  width: 150px; /* Adjust the length of the streak */
+  height: 1px;
+  background: linear-gradient(315deg, #fff, transparent); /* Adjust direction to match star's movement */
+}
+
+/* Keyframes for shooting stars */
+@keyframes shooting {
+  0% {
+    transform: translateX(0) translateY(0) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(300px) translateY(150px) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Create multiple stars with variations */
+.shooting-star:nth-child(1) {
+  top: 50px;
+  left: 0;
+  animation-delay: 0.3s;
+}
+
+.shooting-star:nth-child(2) {
+  top: 100px;
+  left: -50px;
+  animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
+  top: 150px;
+  left: -100px;
+  animation-delay: 2s;
+}
+.shooting-star:nth-child(4) {
+  top: 400px;
+  left: 80px;
+  animation-delay: 2.25s;
+  animation-duration: 2.75s;
+}
+
+.shooting-star:nth-child(5) {
+  top: 250px;
+  left: 200px;
+  animation-delay: 1.5s;
+  animation-duration: 2.5s;
+}
+
+.shooting-star:nth-child(6) {
+  top: 100px;
+  left: 400px;
+  animation-delay: 3s;
+  animation-duration: 3.25s;
+}
+
+
+  
+}
    
