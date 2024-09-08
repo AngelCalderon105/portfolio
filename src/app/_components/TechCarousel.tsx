@@ -16,20 +16,19 @@ import AutoScroll from 'embla-carousel-auto-scroll'
   >
   <CarouselContent>
 
-     {
-       techImages.map(imageSrc =>(
-         <CarouselItem className="">
-         <Image 
-         src = {imageSrc} 
-         width={100}
-         height={100}
-        alt = "Company Logo"
+  {
+  techImages.map((imageSrc, index) => (
+    <CarouselItem key={index} className="">
+      <Image 
+        src={imageSrc} 
+        width={100}
+        height={100}
+        alt="Company Logo"
         className=""  
-        ></Image>
+      />
     </CarouselItem>
-      ))
-     }
-    
+  ))
+}
     
   </CarouselContent>
 </Carousel>
