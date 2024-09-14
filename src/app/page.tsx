@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="flex justify-start gap-2 my-2">
             <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
-            <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "x.com"/>
+            <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/>
             <TextButton text = "Get In Touch" textSize="text-md"/>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center gap-x-4 ">
         <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
-        <SocialButton imageSrc={tiktokLogo} altText="Twitter Logo" url = "twitter.com"/>
+        <SocialButton imageSrc={tiktokLogo} altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/>
       </div>
       <p className=" text-center text-sm p-10  ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
 
