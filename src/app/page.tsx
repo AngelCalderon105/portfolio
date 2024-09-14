@@ -13,8 +13,8 @@ import sparkybulldogs from "../../public/images/sparkybulldogs.png"
 import gpp from "../../public/images/gpp.png"
 import cbulldogs from "../../public/images/cbulldogs.png"
 import gppLogo from "../../public/images/gpplogo.png"
-import twitterLogo from "../../public/socialmedia/twitter-logo.svg"
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
+import linkedInLogo from "../../public/socialmedia/linkedin-logo.svg"
 import rightArrow from "../../public/symbols/right-arrow.svg"
 import TechCousel from "./_components/TechCarousel";
 
@@ -56,8 +56,8 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-start gap-2 my-2">
-            <SocialButton imageSrc={tiktokLogo} altText="Tiktok Logo" url = "tiktok.com"/>
-            <SocialButton imageSrc = {twitterLogo}  altText="Twitter Logo" url = "x.com"/>
+            <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
+            <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "x.com"/>
             <TextButton text = "Get In Touch" textSize="text-md"/>
           </div>
         </div>
@@ -123,13 +123,13 @@ export default function Home() {
 
   {/* Buttons */}
   <div className="inline-flex flex-col gap-4 my-4">
-    <TextButton text="Browse My Work" symbol={rightArrow} textSize="text-md" />
-    <TextButton text="View Experience" symbol={rightArrow} textSize="text-md" />        
+    <TextButton text="Browse My Work" symbol={rightArrow} textSize="text-md" navigation="#projects"/>
+    <TextButton text="View Experience" symbol={rightArrow} textSize="text-md" navigation="#experience"/>        
   </div>
 </div>
 
       {/* Experience */}
-      <div>
+      <div id = "experience" className="py-5">
         <p className="heading mx-5">Experience</p>
       
         <ExperienceCard 
@@ -177,7 +177,8 @@ export default function Home() {
       
       </div>
       {/* Projects */}
-      <div>
+      <div id="projects"  className="py-5">
+        <p className="heading mx-5 ">Projects</p>
         <ProjectCard 
         projectName = "Calderon Bulldogs"
         projectImage = {cbulldogs}
@@ -202,8 +203,8 @@ export default function Home() {
         <p className="mx-4 mt-2 mb-4  text-white text-center">Actively Looking For Software Engineering Positions</p>
       </div>
       <div className="flex justify-center gap-x-4 ">
-        <SocialButton imageSrc={tiktokLogo} altText="Tiktok Logo" url = "tiktok.com"/>
-        <SocialButton imageSrc={twitterLogo} altText="Twitter Logo" url = "twitter.com"/>
+        <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
+        <SocialButton imageSrc={tiktokLogo} altText="Twitter Logo" url = "twitter.com"/>
       </div>
       <p className=" text-center text-sm p-10  ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
 
