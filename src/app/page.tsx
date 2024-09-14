@@ -182,18 +182,21 @@ export default function Home() {
         <ProjectCard 
         projectName = "Calderon Bulldogs"
         projectImage = {cbulldogs}
+        githubLink="https://github.com/altitud-initiative/calderon-bulldogs"
         tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Prisma", "AWS S3"]}
         description = "A Full Stack website fo Local Puppy Business"
         />
                 <ProjectCard 
         projectName = "Green Portfolio"
         projectImage = {gpp}
+        githubLink="https://github.com/gpproject06/green-portfolio-website"
         tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "MongoDB"]}
         description = "A Landing page for a Business Organization designed to help students"
         />
-                <ProjectCard 
+        <ProjectCard 
         projectName = "Sparky's Puppies"
         projectImage = {sparkybulldogs}
+        githubLink="https://github.com/AngelCalderon105/Sparkies-Puppies"
         tools = {["HTML","JavaScript", "Tailwind CSS", "Firebase"]}
         description = "A Full Stack website fo Local Puppy Business"
         />

@@ -7,18 +7,19 @@ interface ProjectCardProps {
   tools: string[];
   projectImage: StaticImageData;
   description: string;
+  githubLink: string;
 }
 
-export default function ProjectCard({projectName, tools, projectImage, description} :ProjectCardProps ) {
+export default function ProjectCard({projectName, tools, projectImage, description, githubLink} :ProjectCardProps ) {
   return (
     <div className='card my-5 p-0 '>
-      <div className=" flex justify-start gap-2">
+      <a href={githubLink}className=" flex justify-start gap-2">
         <Image 
         src = {projectImage} 
         alt = "Company Logo"
         className="rounded-t-3xl"  
         ></Image>
-      </div>
+      </a>
       
       <div className="p-5">
         <p className="text-white text-xl  mb-2">{projectName}</p>
