@@ -184,7 +184,7 @@ export default function Home() {
       
       </div>
       {/* Projects */}
-      <div id="projects"  className="py-5">]
+      <div id="projects"  className="py-5">
         <p className="heading mx-5 ">Projects</p>
         <ProjectCard 
         projectName = "Calderon Bulldogs"
