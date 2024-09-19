@@ -13,6 +13,10 @@ import sparkybulldogs from "../../public/images/sparkybulldogs.png"
 import gpp from "../../public/images/gpp.png"
 import cbulldogs from "../../public/images/cbulldogs.png"
 import gppLogo from "../../public/images/gpplogo.png"
+import altitudTeam from "../../public/images/altitudteam.png"
+import gppteam1 from "../../public/images/gppteam1.jpg"
+import gppteam2 from "../../public/images/gppteam2.jpg"
+
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
 import linkedInLogo from "../../public/socialmedia/linkedin-logo.svg"
 import rightArrow from "../../public/symbols/right-arrow.svg"
@@ -28,6 +32,7 @@ import prismaLogo from "../../public/techImages/prisma.png";
 import pythonLogo from "../../public/techImages/python.png";
 import tailwindLogo from "../../public/techImages/tailwind.png";
 import typescriptLogo from "../../public/techImages/typescript.png";
+
 
 export default function Home() {
   const techImages: StaticImageData[] = [
@@ -58,10 +63,10 @@ export default function Home() {
           <div className="flex justify-start gap-2 my-2">
             <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
             <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/>
-            <TextButton text = "Get In Touch" textSize="text-md"/>
+            <TextButton text = "Get In Touch" textSize="text-md" navigation="#contact"/>
           </div>
         </div>
-        <p className="heading">Pushing Ideas to the <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
+        <p className="heading">Pushing Ideas to their <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
         <p className="my-4">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
       </div>
       
@@ -136,7 +141,8 @@ export default function Home() {
         companyLogo = {altitudLogo}
         companyName="Altitud" 
         position="Founder/Full Stack Engineer" 
-        text="Lead Developer of a team of 8 engineers, managing all operations including sprint meetings, client relations and the design and implementation of full stack architecture utilizing MongoDB, Express, React, and Node.js." 
+        date = "March 2024 - Present"
+        text="Lead Developer of a team of 10, including software engineers and UI/UX designers, directing all operations." 
         technicalSkills={[ 
           "Next.js",
           "React.js",
@@ -152,12 +158,13 @@ export default function Home() {
           "Agile",
           "Communication"
         ]} 
-        image="" />
+        experienceImage={altitudTeam} />
         <ExperienceCard 
         companyLogo = {gppLogo}
         companyName="GPP" 
         position="Front End Developer Intern" 
-        text="Lead Developer of a team of 8 engineers, managing all operations including sprint meetings, client relations and the design and implementation of full stack architecture utilizing MongoDB, Express, React, and Node.js." 
+        text="Contributed to key milestones while learning and supporting full development cycles for over 2,000 users." 
+        date = "June 2024 - Present"
         technicalSkills={[ 
           "Next.js",
           "React.js",
@@ -173,11 +180,11 @@ export default function Home() {
           "Agile",
           "Communication"
         ]} 
-        image="" />
+        experienceImage={gppteam1} />
       
       </div>
       {/* Projects */}
-      <div id="projects"  className="py-5">
+      <div id="projects"  className="py-5">]
         <p className="heading mx-5 ">Projects</p>
         <ProjectCard 
         projectName = "Calderon Bulldogs"
@@ -201,7 +208,7 @@ export default function Home() {
         description = "A Full Stack website fo Local Puppy Business"
         />
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center" id="contact">
         <h1 className="font-instrument_italic mt-4 text-text text-4xl">Calderon</h1>
         <p className="mx-4 mt-2 mb-4  text-white text-center">Actively Looking For Software Engineering Positions</p>
       </div>
@@ -209,7 +216,12 @@ export default function Home() {
         <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
         <SocialButton imageSrc={tiktokLogo} altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/>
       </div>
-      <p className=" text-center text-sm p-10  ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
+        <div className="flex flex-col items-center py-5 gap-2">
+        <a href="mailto:angelcalderon105@gmail.com">angelcalderon105@gmail.com</a>
+        <a href="tel:+714-482-5071">714-482-5071</a>
+
+        </div>
+      <p className=" text-center text-sm p-8  ">© Copyright 2024 Angel Calderon. All rights reserved.</p>
 
       </main>
     );

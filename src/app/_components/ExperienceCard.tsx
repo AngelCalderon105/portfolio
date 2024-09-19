@@ -7,12 +7,21 @@ interface ExperienceCardProps {
   companyName: string;
   position: string;
   text: string;
-  image: string;
+  date : string;
+  experienceImage: StaticImageData;
   technicalSkills: string[];
   softSkills: string[];
 }
 
-export default function ExperienceCard({companyLogo, companyName, position, text, image, technicalSkills, softSkills } :ExperienceCardProps ) {
+export default function ExperienceCard({
+  companyLogo, 
+  companyName, 
+  position,
+  date,
+   text,
+   experienceImage,
+   technicalSkills,
+   softSkills } :ExperienceCardProps ) {
   return (
     <div className='card my-5'>
       <div className=" flex justify-start gap-2">
@@ -26,8 +35,14 @@ export default function ExperienceCard({companyLogo, companyName, position, text
         <p className="heading ">{companyName}</p>
       </div>
     <p className="heading ">{position}</p>
+    <p className="my-4">{date}</p>
+        <Image
+        src = {experienceImage} 
+        alt = "Company Logo"
+        className="rounded-2xl">
+
+        </Image>
     <p className="my-4">{text}</p>
-    <p>{image}</p>
     <div>
       <h1 className="text-white text-2xl my-4">Technical</h1>
       <div className="flex flex-wrap gap-2 ">

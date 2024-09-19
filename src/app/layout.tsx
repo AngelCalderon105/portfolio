@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Instrument_Serif } from 'next/font/google'
 import "./globals.css";
-
+import thumbup from "../../public/avatar/thumbsup.png"
 export const metadata: Metadata = {
   title: "Angel Calderon",
-  description: "Software Engineering Portfolio",
+  description: "Welcome to Angel's Software Engineering Portfolio Website."
 };
 
 const instrument_serif = Instrument_Serif({
