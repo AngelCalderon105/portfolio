@@ -13,6 +13,7 @@ import AutoScroll from 'embla-carousel-auto-scroll'
       speed: .5,
     }),
   ]}
+  className=""
   >
   <CarouselContent>
 

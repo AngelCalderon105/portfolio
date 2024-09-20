@@ -23,9 +23,9 @@ export default function ProjectCard({projectName, tools, projectImage, descripti
         </div>
       
         <div className="p-5">
-          <p className="text-white text-xl mb-2">{projectName}</p>
-          <p className="my-4">{description}</p>
-          <div className="flex flex-wrap gap-2 ">
+          <p className="text-white text-xl mb-2 md:text-4xl">{projectName}</p>
+          <p className="my-4 md:text-lg">{description}</p>
+          <div className="flex flex-wrap gap-2 md:text-lg ">
             {tools.map(tool => (
               <TextButton key={tool} text={tool} textSize="text-md"/>
             ))}

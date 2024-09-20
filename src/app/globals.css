@@ -165,7 +165,7 @@
        @apply font-satoshi_italic text-white;
      }
      .card{
-          @apply bg-ui p-5 mx-5 border-1 border-white border-opacity-10 rounded-2rem
+          @apply bg-ui p-5 md:p-10 mx-5 md:mx-10 border-1 border-white border-opacity-10 rounded-2rem
      }
      .heading{
           @apply text-heading text-3xl my-4
