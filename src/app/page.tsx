@@ -19,6 +19,7 @@ import gppteam2 from "../../public/images/gppteam2.jpg"
 
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg"
 import linkedInLogo from "../../public/socialmedia/linkedin-logo.svg"
+import githubLogo from "../../public/socialmedia/github-logo.svg"
 import rightArrow from "../../public/symbols/right-arrow.svg"
 import TechCousel from "./_components/TechCarousel";
 
@@ -57,12 +58,13 @@ export default function Home() {
             </div>
             <div>
               <div className="text-white text-lg ">Hey, Im Angel</div>
-              <div>Software Engineer</div>
+              <div> California, United States</div>
             </div>
           </div>
           <div className="flex justify-start gap-2 my-2">
             <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
-            <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/>
+            <SocialButton imageSrc = {githubLogo}  altText="Twitter Logo" url = "https://github.com/AngelCalderon105"/>
+            {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}
             <TextButton text = "Get In Touch" textSize="text-md" navigation="#contact"/>
           </div>
         </div>
@@ -123,7 +125,7 @@ export default function Home() {
   {/* Text content */}
   <p className="heading">What sets me <i className="font-instrument_italic">apart?</i></p>
   <p className="my-4">
-    My determination knows no bounds. I am exceptionally proactive in my work ethic; more often than not, going <i>above and beyond</i> to achieve remarkable results. My involvement in your team guarantees that expectations are not just met but consistently exceeded,
+    My determination knows no bounds. I am exceptionally proactive in my work ethic; more often than not, going <i>above and beyond</i> to achieve remarkable results. My involvement in your team guarantees that <i>expectations</i> are not just met but <i>consistently exceeded</i>.
   </p>
 
   {/* Buttons */}
@@ -213,9 +215,9 @@ export default function Home() {
         <p className="mx-4 mt-2 mb-4  text-white text-center">Actively Looking For Software Engineering Positions</p>
       </div>
       <div className="flex justify-center gap-x-4 ">
-        <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
-        <SocialButton imageSrc={tiktokLogo} altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/>
-      </div>
+           <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
+           <SocialButton imageSrc = {githubLogo}  altText="Twitter Logo" url = "https://github.com/AngelCalderon105"/>
+            {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}      </div>
         <div className="flex flex-col items-center py-5 gap-2">
         <a href="mailto:angelcalderon105@gmail.com">angelcalderon105@gmail.com</a>
         <a href="tel:+714-482-5071">714-482-5071</a>
