@@ -49,8 +49,8 @@ export default function Home() {
     typescriptLogo
   ];
     return (
-    <main className="bg-background text-text py-5 lg:flex lg:justify-center scroll-smooth ">
-      <div className="lg:max-w-7xl ">
+    <main className="bg-background text-text py-5 flex justify-center scroll-smooth ">
+      <div className="max-w-3xl lg:max-w-7xl ">
       <div className="lg:flex lg:flex-none lg:justify-center pt-10 ">
 
       <div className='card lg:max-w-3xl'>
@@ -151,21 +151,21 @@ export default function Home() {
 
       {/* Experience */}
       <div id = "experience" className="py-5">
-        <p className="heading mx-5">Experience</p>
+        <p className="heading text-5xl m-10">Experience</p>
       
         <ExperienceCard 
         companyLogo = {altitudLogo}
         companyName="Altitud" 
         position="Founder/Full Stack Engineer" 
         date = "March 2024 - Present"
-        text="Lead Developer of a team of 10, including software engineers and UI/UX designers, directing all operations." 
+        text="Lead Developer of a team of 10 software engineers and UI/UX designers, directing all operations. " 
         technicalSkills={[ 
           "Next.js",
           "React.js",
-          "Tailwind CSS",
+          "Tailwind",
           "TypeScript",
           "PostgreSQL",
-          "Prisma"
+          
         ]} 
         softSkills={[
           "Leadership",
@@ -179,15 +179,14 @@ export default function Home() {
         companyLogo = {gppLogo}
         companyName="GPP" 
         position="Front End Developer Intern" 
-        text="Contributed to key milestones while learning and supporting full development cycles for over 2,000 users." 
+        text="Contributed to key milestones while learning and supporting full development cycles for 2,000 users." 
         date = "June 2024 - Present"
         technicalSkills={[ 
           "Next.js",
           "React.js",
           "Tailwind CSS",
           "TypeScript",
-          "PostgreSQL",
-          "Prisma"
+          "PostgreSQL"
         ]} 
         softSkills={[
           "Leadership",
@@ -201,7 +200,9 @@ export default function Home() {
       </div>
       {/* Projects */}
       <div id="projects"  className="py-5">
-        <p className="heading mx-5 ">Projects</p>
+        <p className="heading text-5xl m-10">Projects</p>
+        <div className="lg:grid grid-cols-2">
+
         <ProjectCard 
         projectName = "Calderon Bulldogs"
         projectImage = {cbulldogs}
@@ -214,8 +215,9 @@ export default function Home() {
         projectImage = {gpp}
         githubLink="https://github.com/gpproject06/green-portfolio-website"
         tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "MongoDB"]}
-        description = "A Landing page for a Business Organization designed to help students"
+        description = "A Landing page for a Social designed to help students"
         />
+        
         <ProjectCard 
         projectName = "Sparky's Puppies"
         projectImage = {sparkybulldogs}
@@ -223,6 +225,8 @@ export default function Home() {
         tools = {["HTML","JavaScript", "Tailwind CSS", "Firebase"]}
         description = "A Full Stack website fo Local Puppy Business"
         />
+        
+        </div>
       </div>
       <div className="flex flex-col items-center justify-center" id="contact">
         <h1 className="font-instrument_italic mt-4 text-text text-4xl">Calderon</h1>

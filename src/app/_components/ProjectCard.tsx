@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({projectName, tools, projectImage, description, githubLink} : ProjectCardProps ) {
   return (
-    <div className='card my-5 p-0 overflow-hidden group'>
+    <div className='card my-5 p-0 overflow-hidden group '>
       <a href={githubLink} className="">
         <div className="flex justify-start gap-2 overflow-hidden">
           <Image 

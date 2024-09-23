@@ -18,12 +18,13 @@ export default function ExperienceCard({
   companyName, 
   position,
   date,
-   text,
-   experienceImage,
-   technicalSkills,
-   softSkills } :ExperienceCardProps ) {
-  return (
-    <div className='card my-5'>
+  text,
+  experienceImage,
+  technicalSkills,
+  softSkills } :ExperienceCardProps ) {
+    return (
+      <div className='card mt-10 lg:px-14 '>
+      <div className="lg:flex lg:justify-between mb-5">
       <div className=" flex justify-start gap-2">
         <Image 
         src = {companyLogo} 
@@ -34,31 +35,43 @@ export default function ExperienceCard({
         ></Image>
         <p className="heading ">{companyName}</p>
       </div>
-    <p className="heading ">{position}</p>
-    <p className="my-4">{date}</p>
-        <Image
-        src = {experienceImage} 
-        alt = "Company Logo"
-        className="rounded-2xl">
+      <div className="flex flex-col justify-center lg:text-lg">
+        <p className="hidden lg:block">{date}</p>
+      </div>
+        </div>
+      <div className="lg:flex lg:justify-between  ">
+        <div className="">
 
-        </Image>
-    <p className="my-4">{text}</p>
+        <p className="heading my-0 ">{position}</p>
+        <p className="my-5 lg:hidden">{date}</p>
+        <p className="my-5 lg:my-9 lg:w-9/12  md:text-lg lg:text-2xl">{text}</p>
     <div>
-      <h1 className="text-white text-2xl my-4">Technical</h1>
+      <h1 className="text-white text-2xl mb-4">Technical Skills</h1>
       <div className="flex flex-wrap gap-2 ">
       {technicalSkills.map(skill => (
         <TextButton key={skill} text={skill} textSize="text-md"/>
       ))}
       </div>
     </div>
-    <div className="mt-10">
+        </div>
+        <div className="mt-10 lg:my-0">
+        <Image
+        src = {experienceImage} 
+        alt = "Company Logo"
+        className="  rounded-2xl lg:max-w-sm ">
+
+        </Image>
+
+          </div>
+    </div>
+    {/* <div className="mt-10">
       <h1 className="text-white text-2xl my-4">Soft Skills</h1>
       <div className="flex flex-wrap gap-x-2 gap-y-3">
       {softSkills.map(skill => (
           <TextButton key={skill} text={skill} textSize="text-md"/>
         ))}
       </div>
-    </div>
+    </div> */}
     </div>
   )
 }
