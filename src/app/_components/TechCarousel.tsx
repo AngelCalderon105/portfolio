@@ -23,7 +23,7 @@ import AutoScroll from 'embla-carousel-auto-scroll'
       <Image 
         src={imageSrc} 
         alt="Company Logo"
-        className="w-16 lg:w-18"  
+        className="w-10 lg:w-16"  
       />
     </CarouselItem>
   ))
