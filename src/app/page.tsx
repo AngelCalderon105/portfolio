@@ -51,24 +51,24 @@ export default function Home() {
     return (
     <main className="bg-background text-text py-5 flex justify-center scroll-smooth ">
       <div className="max-w-3xl lg:max-w-7xl ">
-      <div className="lg:flex lg:flex-none lg:justify-center pt-10 ">
+      <div className="lg:grid lg:grid-cols-3 pt-10">
 
-      <div className='card lg:max-w-3xl'>
-        <div className="md:flex md:justify-between  ">
+      <div className='card lg:max-w-3xl col-span-2 '>
+        <div className="md:flex md:justify-between md:items-center">
           <div className="flex items-center">
             <div className=" w-20">
               <Image src={avatarThumbsUp} alt="Thumbs Up Avatar"></Image>
             </div>
             <div>
-              <div className="text-white text-lg md:text-xl  ">Hey, Im Angel</div>
-              <div className="md:text-lg"> California, United States</div>
+              <div className="text-white text-lg  ">Hey, Im Angel</div>
+              <div className=""> California, United States</div>
             </div>
           </div>
-          <div className="flex justify-start gap-2 my-2 ">
+          <div className="flex justify-start gap-1 my-2 ">
             <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
             <SocialButton imageSrc = {githubLogo}  altText="Twitter Logo" url = "https://github.com/AngelCalderon105"/>
             {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}
-            <TextButton text = "Get In Touch" textSize="md:text-lg" navigation="#contact"/>
+            <TextButton text = "Get In Touch" textSize="" navigation="#contact"/>
           </div>
         </div>
         <p className="heading mt-5 md:text-4xl">Pushing Ideas to their <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
@@ -76,9 +76,9 @@ export default function Home() {
       </div>
       
         {/* Star Greeting */}
-        <div className="card relative my-10 z-0 overflow-hidden border-b-0.5 lg:m-0  lg:mr-10 lg:p-0 lg:flex lg:flex-none ">
+        <div className="card items-end relative my-10 z-0 overflow-hidden border-b-0.5 lg:m-0  lg:mr-10 lg:p-2 grid-cols-1 ">
           {/* The image container with a higher z-index */}
-          <div className="flex justify-center  ">
+          <div className="flex justify-center lg:items-end lg:h-full ">
 
           <Image src={avatarGreeting} alt="Greeting Avatar" className="relative z-30" />
           </div>
@@ -112,19 +112,18 @@ export default function Home() {
     
 
       {/* Tech Carousel */}
-      <div className="my-10 mx-10 relative ">
+      <div className="flex justify-center">
+      <div className="my-10 mx-10 relative w-8/12  ">
           <div className="absolute inset-0  z-10">
               <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent"></div>
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent"></div>
           </div>
-          <p className="text-center my-5">Tools I&apos;ve Mastered!</p>
-          <div className=" ">
-          <div className="">
-
+          <p className="text-center mb-10">Tools I&apos;ve Mastered!</p>
           <TechCousel techImages={techImages}/>
-          </div>
-          </div>
+         
       </div>
+      </div>
+        
      
       {/* What Sets Me Apart */}
 <div className="card border-b-0.5 lg:flex lg:flex-none max-w-7xl">
