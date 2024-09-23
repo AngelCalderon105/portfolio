@@ -34,6 +34,9 @@ import pythonLogo from "../../public/techImages/python.png";
 import tailwindLogo from "../../public/techImages/tailwind.png";
 import typescriptLogo from "../../public/techImages/typescript.png";
 
+// React
+import * as motion from "framer-motion/client"
+
 
 export default function Home() {
   const techImages: StaticImageData[] = [
@@ -53,7 +56,15 @@ export default function Home() {
       <div className="max-w-3xl lg:max-w-7xl ">
       <div className="lg:grid lg:grid-cols-3 pt-10">
 
-      <div className='card lg:max-w-3xl col-span-2 '>
+      <motion.div className='card lg:max-w-3xl col-span-2 '
+      initial={{ y: '100vw', opacity: 0  }}
+      animate={{y: 0, opacity:1}}
+      transition={{delay:.1,
+        ease: "linear",
+         duration: 2.5,
+         type:"spring"
+      }}
+        >
         <div className="md:flex md:justify-between md:items-center">
           <div className="flex items-center">
             <div className=" w-20">
@@ -73,10 +84,17 @@ export default function Home() {
         </div>
         <p className="heading mt-5 md:text-4xl">Pushing Ideas to their <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
         <p className="my-4 md:text-lg lg:text-2xl">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
-      </div>
+      </motion.div>
       
         {/* Star Greeting */}
-        <div className="card items-end relative my-10 z-0 overflow-hidden border-b-0.5 lg:m-0  lg:mr-10 lg:p-2 grid-cols-1 ">
+        <motion.div className="card items-end relative my-10 z-0 overflow-hidden border-b-0.5 lg:m-0  lg:mr-10 lg:p-2 grid-cols-1 "
+          initial={{ y: '100vw'  }}
+          animate={{y: 0}}
+          transition={{delay:.2,
+            ease: "linear",
+             duration: 2.5,
+             type:"spring"
+          }}>
           {/* The image container with a higher z-index */}
           <div className="flex justify-center lg:items-end lg:h-full ">
 
@@ -102,7 +120,7 @@ export default function Home() {
 
           {/* Fade effect including the bottom border */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background opacity-100 z-40 pointer-events-none rounded-b-xl"></div>
-        </div>
+        </motion.div>
 
 
       </div>
@@ -112,8 +130,17 @@ export default function Home() {
     
 
       {/* Tech Carousel */}
-      <div className="flex justify-center">
-      <div className="my-10 mx-10 relative w-8/12  ">
+      <motion.div className="flex justify-center"
+       whileInView={{ opacity: 1 }}
+       initial={{ y: '100vw', opacity: 0  }}
+       animate={{y: 0}}
+       transition={{delay:.5,
+         ease: "linear",
+          duration: 1,
+       }}
+       viewport={{ once: true }} 
+      >
+      <div className="my-10 mx-10 relative lg:w-8/12  ">
           <div className="absolute inset-0  z-10">
               <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent"></div>
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent"></div>
@@ -122,11 +149,20 @@ export default function Home() {
           <TechCousel techImages={techImages}/>
          
       </div>
-      </div>
+      </motion.div>
         
      
       {/* What Sets Me Apart */}
-<div className="card border-b-0.5 lg:flex lg:flex-none max-w-7xl">
+<motion.div className="card border-b-0.5 lg:flex lg:flex-none max-w-7xl"
+   whileInView={{ opacity: 1 }}
+   initial={{ y: '100vw', opacity: 0  }}
+   animate={{y: 0}}
+   transition={{delay:.5,
+     ease: "linear",
+      duration: 1,
+   }}
+   viewport={{ once: true }} 
+  >
   <div className="relative  overflow-hidden flex justify-center lg:flex-none lg:w-72">
     <Image src={avatarThinking} alt="Thinking Avatar" className="relative z-20" />
     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background opacity-100 z-30 pointer-events-none rounded-b-xl"></div>
@@ -146,11 +182,15 @@ export default function Home() {
       <TextButton text="Browse My Work" symbol={rightArrow} textSize="text-md md:text-lg" navigation="#projects"/>
     </div>
   </div>
-</div>
+</motion.div>
 
       {/* Experience */}
       <div id = "experience" className="py-5">
-        <p className="heading text-5xl m-10">Experience</p>
+        <motion.p className="heading text-5xl m-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }} 
+        >Experience</motion.p>
       
         <ExperienceCard 
         companyLogo = {altitudLogo}
@@ -199,7 +239,11 @@ export default function Home() {
       </div>
       {/* Projects */}
       <div id="projects"  className="py-5">
-        <p className="heading text-5xl m-10">Projects</p>
+        <motion.p className="heading text-5xl m-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }} 
+        >Projects</motion.p>
         <div className="lg:grid grid-cols-2">
 
         <ProjectCard 

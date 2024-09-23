@@ -1,6 +1,8 @@
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 import TextButton from "./TextButton";
+// React
+import * as motion from "framer-motion/client"
 
 interface ExperienceCardProps {
   companyLogo: StaticImageData;
@@ -23,7 +25,17 @@ export default function ExperienceCard({
   technicalSkills,
   softSkills } :ExperienceCardProps ) {
     return (
-      <div className='card mt-10 lg:px-14 '>
+      <motion.div className='card mt-10 lg:px-14'
+      initial={{ y: 100, opacity: 0  }}
+      whileInView={{ y: 0, opacity:1}}
+        transition={{delay:.1,
+          ease: "linear",
+           duration: 2.5,
+           type:"spring"
+        }}
+        viewport={{ once: true }}
+     
+      >
       <div className="lg:flex lg:justify-between mb-5">
       <div className=" flex justify-start gap-2">
         <Image 
@@ -72,6 +84,6 @@ export default function ExperienceCard({
         ))}
       </div>
     </div> */}
-    </div>
+    </motion.div>
   )
 }
