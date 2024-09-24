@@ -54,7 +54,7 @@ export default function Home() {
     return (
     <main className="bg-background text-text py-5 flex justify-center scroll-smooth ">
       <div className="max-w-3xl lg:max-w-7xl ">
-      <div className="lg:grid lg:grid-cols-3 pt-10">
+      <div className="lg:grid lg:grid-cols-3  pt-10">
 
       <motion.div className='card lg:max-w-3xl col-span-2 '
       initial={{ y: '100vw', opacity: 0  }}
@@ -244,14 +244,14 @@ export default function Home() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }} 
         >Projects</motion.p>
-        <div className="lg:grid grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2 ">
 
         <ProjectCard 
         projectName = "Calderon Bulldogs"
         projectImage = {cbulldogs}
         githubLink="https://github.com/altitud-initiative/calderon-bulldogs"
         tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Prisma", "AWS S3"]}
-        description = "A Full Stack website fo Local Puppy Business"
+        description = "A Full Stack E-commerce website for a Local Business"
         />
                 <ProjectCard 
         projectName = "Green Portfolio"
@@ -266,7 +266,7 @@ export default function Home() {
         projectImage = {sparkybulldogs}
         githubLink="https://github.com/AngelCalderon105/Sparkies-Puppies"
         tools = {["HTML","JavaScript", "Tailwind CSS", "Firebase"]}
-        description = "A Full Stack website fo Local Puppy Business"
+        description = "A website tailored to a Local Puppy Business"
         />
         
         </div>
