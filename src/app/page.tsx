@@ -258,7 +258,7 @@ export default function Home() {
         projectImage = {gpp}
         githubLink="https://github.com/gpproject06/green-portfolio-website"
         tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "MongoDB"]}
-        description = "A Landing page for a Social designed to help students"
+        description = "An educational website designed to help students in Business"
         />
         
         <ProjectCard 
