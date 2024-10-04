@@ -26,7 +26,7 @@ export default function ProjectCard({projectName, tools, projectImage, descripti
 
     >
         <div className="flex justify-start gap-2 overflow-hidden">
-      <a href={githubLink} className="block">
+      <a href={githubLink} target="_blank" className="block">
           <Image 
             src={projectImage} 
             alt="Company Logo"

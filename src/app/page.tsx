@@ -82,8 +82,8 @@ export default function Home() {
             <TextButton text = "Get In Touch" textSize="" navigation="#contact"/>
           </div>
         </div>
-        <p className="heading mt-5 md:text-4xl">Pushing Ideas to their <i className="font-instrument_italic">Absolute</i> Potential Through code.</p>
-        <p className="my-4 md:text-lg lg:text-2xl">Hey there, I&apos;m Angel, I&apos;m in love with the creative process. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
+        <p className="heading mt-5 md:text-4xl">Pushing Ideas to their <i className="font-instrument_italic">Absolute</i> Potential Through Code. </p>
+        <p className="my-4 md:text-lg lg:text-2xl">Hey there, I&apos;m Angel, I&apos;m in <i>love</i> with the <i>creative process</i>. I excel in both <i>front-end</i> and <i>back-end</i>, delivering robust and elegant software.</p>
       </motion.div>
       
         {/* Star Greeting */}
@@ -197,12 +197,13 @@ export default function Home() {
         companyName="Altitud" 
         position="Founder/Full Stack Engineer" 
         date = "March 2024 - Present"
-        text="Lead Developer of a team of 10 software engineers and UI/UX designers, directing all operations. " 
+        text="Lead Developer of a team of 10 developers and UI/UX designers, directing all operations. Focused on making community impact with software. " 
         technicalSkills={[ 
           "Next.js",
-          "React.js",
-          "Tailwind",
           "TypeScript",
+          "AWS",
+          "TRPC",
+          "Prisma",
           "PostgreSQL",
           
         ]} 
@@ -218,14 +219,14 @@ export default function Home() {
         companyLogo = {gppLogo}
         companyName="GPP" 
         position="Front End Developer Intern" 
-        text="Contributed to key milestones while learning and supporting full development cycles for 2,000 users." 
+        text="At the forefront of key milestones, supporting development cycles for a platform of 2,000+ users." 
         date = "June 2024 - Present"
         technicalSkills={[ 
           "Next.js",
           "React.js",
-          "Tailwind CSS",
           "TypeScript",
-          "PostgreSQL"
+          "Tailwind CSS",
+          "Docker"
         ]} 
         softSkills={[
           "Leadership",
@@ -250,15 +251,15 @@ export default function Home() {
         projectName = "Calderon Bulldogs"
         projectImage = {cbulldogs}
         githubLink="https://github.com/altitud-initiative/calderon-bulldogs"
-        tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Prisma", "AWS S3"]}
-        description = "A Full Stack E-commerce website for a Local Business"
+        tools = {["Next.js","React.js", "TypeScript", "Tailwind CSS",  "AWS S3", "Prisma", "PostgreSQL"]}
+        description = "Full-Stack E-commerce CMS for a Local Business"
         />
                 <ProjectCard 
         projectName = "Green Portfolio"
         projectImage = {gpp}
         githubLink="https://github.com/gpproject06/green-portfolio-website"
-        tools = {["Next.js","React.js", "Tailwind CSS", "TypeScript", "MongoDB"]}
-        description = "An educational website designed to help students in Business"
+        tools = {["Next.js","React.js", "TypeScript", "Tailwind CSS",  "SQL", "Docker"]}
+        description = "An educational platform designed to support business students"
         />
         
         <ProjectCard 
@@ -266,7 +267,7 @@ export default function Home() {
         projectImage = {sparkybulldogs}
         githubLink="https://github.com/AngelCalderon105/Sparkies-Puppies"
         tools = {["HTML","JavaScript", "Tailwind CSS", "Firebase"]}
-        description = "A website tailored to a Local Puppy Business"
+        description = "Front-end site increasing profit and customers for business."
         />
         
         </div>
