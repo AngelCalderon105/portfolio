@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-start gap-1 my-2 ">
-            <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
+            <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-dev/"/>
             <SocialButton imageSrc = {githubLogo}  altText="Twitter Logo" url = "https://github.com/AngelCalderon105"/>
             {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}
             <TextButton text = "Get In Touch" textSize="" navigation="#contact"/>
@@ -277,7 +277,7 @@ export default function Home() {
         <p className="mx-4 mt-2 mb-4  text-white text-center">Actively Looking For Software Engineering Positions</p>
       </div>
       <div className="flex justify-center gap-x-4 ">
-           <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-74036b195/"/>
+           <SocialButton imageSrc={linkedInLogo} altText="LinkedIn Logo" url = "https://www.linkedin.com/in/angel-calderon-dev/"/>
            <SocialButton imageSrc = {githubLogo}  altText="Twitter Logo" url = "https://github.com/AngelCalderon105"/>
             {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}      </div>
         <div className="flex flex-col items-center py-5 gap-2">
