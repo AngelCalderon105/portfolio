@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from "next";
 import { Instrument_Serif } from 'next/font/google'
 import "./globals.css";
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`font-satoshi_medium tracking-tightest ${instrument_serif.variable}`}>{children}</body>
+      <body className={`font-satoshi_medium tracking-tightest ${instrument_serif.variable}`}>{children}<SpeedInsights /></body>
     </html>
   );
 }
