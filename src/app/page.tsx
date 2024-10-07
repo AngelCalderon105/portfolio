@@ -72,7 +72,7 @@ export default function Home() {
             </div>
             <div>
               <div className="text-white text-lg  ">Hey, Im Angel</div>
-              <div className=""> California, United States</div>
+              <div className=""> United States</div>
             </div>
           </div>
           <div className="flex justify-start gap-1 my-2 ">
