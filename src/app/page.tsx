@@ -318,7 +318,7 @@ export default function Home() {
             <ProjectCard
               projectName="Steph's Puppies"
               projectImage={sparkybulldogs}
-              githubLink="https://github.com/AngelCalderon105/Sparkies-Puppies"
+              githubLink="https://github.com/AngelCalderon105/Stephs-Puppies"
               tools={["HTML", "JavaScript", "Tailwind CSS", "Firebase"]}
               description="Front-end site increasing profit and customers for business."
             />
