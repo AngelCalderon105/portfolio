@@ -254,7 +254,7 @@ export default function Home() {
           <ExperienceCard
             companyLogo={gppLogo}
             companyName="Green Portfolio"
-            position="Front End Developer Intern"
+            position="Front End Developer"
             text="At the forefront of key milestones, supporting development cycles for a platform of 2,000+ users."
             date="August 2024 - January 2025"
             technicalSkills={[
