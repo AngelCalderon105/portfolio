@@ -102,7 +102,7 @@ export default function Home() {
             <p className="my-4 md:text-lg lg:text-2xl">
               Hey there, I&apos;m Angel, I&apos;m in <i>love</i> with the{" "}
               <i>creative process</i>. I excel in both <i>front-end</i> and{" "}
-              <i>back-end</i>, delivering robust and elegant software.
+              <i>web development</i>, delivering robust and elegant software.
             </p>
           </motion.div>
 
@@ -231,7 +231,7 @@ export default function Home() {
           <ExperienceCard
             companyLogo={altitudLogo}
             companyName="Altitud"
-            position="Founder/Full Stack Engineer"
+            position="Founder/Software Engineer"
             date="March 2024 - Present"
             text="Lead Developer of a team of 10 developers and UI/UX designers, directing all operations. Focused on making community impact with software. "
             technicalSkills={[
@@ -254,9 +254,9 @@ export default function Home() {
           <ExperienceCard
             companyLogo={gppLogo}
             companyName="Green Portfolio"
-            position="Front End Developer"
+            position="Front End Web Developer "
             text="At the forefront of key milestones, supporting development cycles for a platform of 2,000+ users."
-            date="August 2024 - January 2025"
+            date="August 2024 - March 2025"
             technicalSkills={[
               "Next.js",
               "React.js",
