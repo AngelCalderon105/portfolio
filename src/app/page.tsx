@@ -9,6 +9,11 @@ import avatarThumbsUp from "../../public/avatar/thumbsup.png";
 import avatarThinking from "../../public/avatar/thinking.png";
 import avatarGreeting from "../../public/avatar/greeting.png";
 import altitudLogo from "../../public/images/altitudlogo.png";
+import codeLogo from "../../public/images/codeLogo.png";
+import freelance from "../../public/images/freelance.jpg";
+import portfolioImage from "../app/opengraph-image.png";
+import ptgLogo from "../../public/images/ptglogo.jpeg";
+import ptgHotel from "../../public/images/ptghotel.jpg";
 import sparkybulldogs from "../../public/images/sparkybulldogs.png";
 import gpp from "../../public/images/gpp.png";
 import cbulldogs from "../../public/images/cbulldogs.png";
@@ -16,6 +21,7 @@ import gppLogo from "../../public/images/gpplogo.png";
 import altitudTeam from "../../public/images/altitudteam.png";
 import gppteam1 from "../../public/images/gppteam1.jpg";
 import gppteam2 from "../../public/images/gppteam2.png";
+import iprefer from "../../public/images/iprefer.png";
 
 import tiktokLogo from "../../public/socialmedia/tiktok-logo.svg";
 import linkedInLogo from "../../public/socialmedia/linkedin-logo.svg";
@@ -227,20 +233,18 @@ export default function Home() {
           >
             Experience
           </motion.p>
-
           <ExperienceCard
-            companyLogo={altitudLogo}
-            companyName="Altitud"
-            position="Founder/Software Engineer"
-            date="March 2024 - Present"
-            text="Lead Developer of a team of 10 developers and UI/UX designers, directing all operations. Focused on making community impact with software. "
+            companyLogo={ptgLogo}
+            companyName="Preferred Hotels & Resorts"
+            position="Web Developer"
+            date="April 2025 - Present"
+            text="Contributed to a team improving all company websites for 3M+ members and 650+ hotels across 85 countries."
             technicalSkills={[
               "Next.js",
-              "TypeScript",
-              "AWS",
-              "TRPC",
-              "Prisma",
-              "PostgreSQL",
+              "React.js",
+              "JavaScript",
+              "SASS",
+              "Drupal",
             ]}
             softSkills={[
               "Leadership",
@@ -249,8 +253,9 @@ export default function Home() {
               "Agile",
               "Communication",
             ]}
-            experienceImage={altitudTeam}
+            experienceImage={ptgHotel}
           />
+
           <ExperienceCard
             companyLogo={gppLogo}
             companyName="Green Portfolio"
@@ -273,6 +278,52 @@ export default function Home() {
             ]}
             experienceImage={gppteam2}
           />
+          <ExperienceCard
+            companyLogo={altitudLogo}
+            companyName="Altitud"
+            position="Founder/Software Engineer"
+            date="Sep 2023 - Dec 2024"
+            text="Lead Developer of a team of 10 developers and UI/UX designers, directing all operations. Focused on making community impact with software. "
+            technicalSkills={[
+              "Next.js",
+              "TypeScript",
+              "AWS",
+              "TRPC",
+              "Prisma",
+              "PostgreSQL",
+            ]}
+            softSkills={[
+              "Leadership",
+              "Team Collaboration",
+              "Project Management",
+              "Agile",
+              "Communication",
+            ]}
+            experienceImage={altitudTeam}
+          />
+          <ExperienceCard
+            companyLogo={codeLogo}
+            companyName="Freelance"
+            position="Web Developer"
+            date="January 2023 - Sept 2023"
+            text="Delivered and deployed scalable, production-ready websites for 10+ businesses"
+            technicalSkills={[
+              "React.js",
+              "JavaScript",
+              "TypeScript",
+              "HTML",
+              "CSS",
+              "MongoDB",
+            ]}
+            softSkills={[
+              "Leadership",
+              "Team Collaboration",
+              "Project Management",
+              "Agile",
+              "Communication",
+            ]}
+            experienceImage={freelance}
+          />
         </div>
         {/* Projects */}
         <div id="projects" className="py-5">
@@ -282,9 +333,23 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            Projects
+            Client Projects
           </motion.p>
           <div className="lg:grid lg:grid-cols-2 ">
+            <ProjectCard
+              projectName="IPrefer Rewards"
+              projectImage={iprefer}
+              githubLink="https://preferredhotels.com/"
+              tools={[
+                "Next.js",
+                "React.js",
+                "JavaScript",
+                "SASS",
+                "AWS",
+                "Drupal",
+              ]}
+              description="Supported Loyalty Rewards Program Portal for PTG"
+            />
             <ProjectCard
               projectName="Cal Bulldogs"
               projectImage={cbulldogs}
@@ -321,6 +386,13 @@ export default function Home() {
               githubLink="https://github.com/AngelCalderon105/Stephs-Puppies/tree/portfolio"
               tools={["HTML", "JavaScript", "Tailwind CSS", "Firebase"]}
               description="Front-end site increasing profit and customers for business."
+            />
+            <ProjectCard
+              projectName="Portfolio"
+              projectImage={portfolioImage}
+              githubLink="https://www.angelcalderon.app/"
+              tools={["Next.js", "React", "TypeScript", "Tailwind CSS"]}
+              description="Professional Portfolio showcasing experience and work "
             />
           </div>
         </div>
