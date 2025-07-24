@@ -309,11 +309,11 @@ export default function Home() {
             text="Delivered and deployed scalable, production-ready websites for 10+ businesses"
             technicalSkills={[
               "React.js",
+              "HTML/CSS",
               "JavaScript",
               "TypeScript",
-              "HTML",
-              "CSS",
-              "MongoDB",
+              "Express.js",
+              "Node.js",
             ]}
             softSkills={[
               "Leadership",
