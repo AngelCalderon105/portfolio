@@ -92,7 +92,11 @@ export default function Home() {
                   altText="Twitter Logo"
                   url="https://github.com/AngelCalderon105"
                 />
-                {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}
+                <SocialButton
+                  imageSrc={tiktokLogo}
+                  altText="Twitter Logo"
+                  url="https://www.tiktok.com/@angelcalderon.app"
+                />
                 <TextButton
                   text="Get In Touch"
                   textSize=""
@@ -415,7 +419,11 @@ export default function Home() {
             altText="Twitter Logo"
             url="https://github.com/AngelCalderon105"
           />
-          {/* <SocialButton imageSrc = {tiktokLogo}  altText="Twitter Logo" url = "https://www.tiktok.com/@reflexcode.io"/> */}{" "}
+          <SocialButton
+            imageSrc={tiktokLogo}
+            altText="Twitter Logo"
+            url="https://www.tiktok.com/@angelcalderon.app"
+          />{" "}
         </div>
         <div className="flex flex-col items-center py-5 gap-2">
           <a href="mailto:angelcalderon105@gmail.com">
