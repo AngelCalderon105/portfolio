@@ -1,13 +1,17 @@
+"use client"
+
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import ShootingStars from "./_components/ShootingStars";
 import ExperienceCard from "./_components/ExperienceCard";
 import ProjectCard from "./_components/ProjectCard";
-import TextButton from "./_components/TextButton";
+import TextButton from "./_components/TextButton"
+import ChatSection from "./_components/ChatSection"
 import SocialButton from "./_components/SocialButton";
 import avatarThumbsUp from "../../public/avatar/thumbsup.png";
 import avatarThinking from "../../public/avatar/thinking.png";
 import avatarGreeting from "../../public/avatar/greeting.png";
+import avatarAI from "../../public/avatar/ai.jpg";
 import altitudLogo from "../../public/images/altitudlogo.png";
 import codeLogo from "../../public/images/codeLogo.png";
 import freelance from "../../public/images/freelance.jpg";
@@ -178,54 +182,8 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* What Sets Me Apart */}
-        <motion.div
-          className="card border-b-0.5 lg:flex lg:flex-none max-w-7xl"
-          whileInView={{ opacity: 1 }}
-          initial={{ y: "100vw", opacity: 0 }}
-          animate={{ y: 0 }}
-          transition={{ delay: 0.5, ease: "linear", duration: 1 }}
-          viewport={{ once: true }}
-        >
-          <div className="relative  overflow-hidden flex justify-center lg:flex-none lg:w-72">
-            <Image
-              src={avatarThinking}
-              alt="Thinking Avatar"
-              className="relative z-20"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background opacity-100 z-30 pointer-events-none rounded-b-xl"></div>
-          </div>
-
-          {/* Text content */}
-          <div className="">
-            <p className="heading md:text-4xl">
-              What sets me <i className="font-instrument_italic">apart?</i>
-            </p>
-            <p className="my-4 md:text-lg lg:text-2xl">
-              My determination knows no bounds. I am exceptionally proactive in
-              my work ethic; more often than not, going <i>above and beyond</i>{" "}
-              to achieve remarkable results. My involvement in your team
-              guarantees that <i>expectations</i> are not just met but{" "}
-              <i>consistently exceeded</i>.
-            </p>
-
-            {/* Buttons */}
-            <div className="inline-flex flex-col md:flex-row gap-4 my-4">
-              <TextButton
-                text="View Experience"
-                symbol={rightArrow}
-                textSize="md:text-lg"
-                navigation="#experience"
-              />
-              <TextButton
-                text="Browse My Work"
-                symbol={rightArrow}
-                textSize="text-md md:text-lg"
-                navigation="#projects"
-              />
-            </div>
-          </div>
-        </motion.div>
+        {/* Chat Section */}
+       <ChatSection/>
 
         {/* Experience */}
         <div id="experience" className="py-5">
