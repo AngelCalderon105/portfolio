@@ -53,15 +53,15 @@ export default function ChatInput({
       <button
         onClick={handleSubmit}
         disabled={!message.trim()}
-        className=" flex items-center gap-2 py-1 px-4 md:py-2 md:px-8 bg-ui border-2 placeholder:text-sm md:placeholder:text-base border-text border-opacity-10 rounded-xl p-2 hover:border-opacity-30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className=" text-sm md:text-base flex items-center flex-none gap-2 py-2 px-4 md:py-2 md:px-8 bg-ui border-2 placeholder:text-sm md:placeholder:text-base border-text border-opacity-10 rounded-xl p-2 hover:border-opacity-30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         Submit
         <Image 
           src={submitIcon} 
           alt="Submit" 
-          width={20} 
-          height={20} 
-          className="w-5 h-5"
+          width={15} 
+          height={15} 
+          className="w-[15px] h-[15px] md:w-[20px] md:h-[20px]"
         />
       </button>
     </div>
